@@ -41,6 +41,8 @@ ul {
 a > img {
     border-radius: 50%;
     transition: linear 0.3s;
+    width: 70px;
+    height: 70px;
 }
 
 a:hover img {
