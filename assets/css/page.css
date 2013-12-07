@@ -30,8 +30,9 @@ ul {
 
 #logo {
     width: 400px;
-    font-size: 30px;
+    font-size: 28px;
     padding: 5px;
+    font-weight: 700;
 }
 
 #logo * {
@@ -41,8 +42,8 @@ ul {
 a > img {
     border-radius: 50%;
     transition: linear 0.3s;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 
 a:hover img {
