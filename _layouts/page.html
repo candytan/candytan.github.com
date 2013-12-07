@@ -1,0 +1,22 @@
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ site.css }}/page.css">
+</head>
+<body>
+    <div id="headbar">
+        <div id="logo">
+            <a href="/">
+                <img src="{{ site.pic }}/logo.jpg">
+                <span>Candytan Studio</span>
+            </a>
+        </div>
+        <div class="padding"></div>
+        <ul id="navbar">
+            <li class="{% if page.loc == "m" %}currPlace{% endif %}"><a href="/member/">Member</a></li>
+            <li class="{% if page.loc == "p" %}currPlace{% endif %}"><a href="/projects/">Projects</a></li>
+            <li class="{% if page.loc == "a" %}currPlace{% endif %}"><a href="/about/">About</a></li>
+            <li class="{% if page.loc == "l" %}currPlace{% endif %}"><a href="/link/">Links</a></li>
+        </ul>
+    </div>
+    {{ page.content }}
+</body>

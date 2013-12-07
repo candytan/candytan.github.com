@@ -1,0 +1,66 @@
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:visited {
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+#headbar {
+    position: relative;
+    font-size: 25px;
+    font-weight: 900;
+    background-color: #ccd;
+    padding: 10px;
+    text-align: center;
+}
+
+#headbar * {
+    display: inline-block;
+}
+
+#headbar .padding {
+    width:15%;
+}
+
+#logo {
+    width: 400px;
+    font-size: 30px;
+    padding: 5px;
+}
+
+#logo * {
+    vertical-align: middle;
+}
+
+a > img {
+    border-radius: 50%;
+    transition: linear 0.3s;
+}
+
+a:hover img {
+    transform:rotate(345deg);
+}
+
+#navbar {
+    position: relative;
+}
+
+#navbar li {
+    margin-right: 30px;
+}
+
+#navbar li a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition:linear 0.3s;
+}
+
+#navbar li a:hover {
+    background-color: #dde;
+}
