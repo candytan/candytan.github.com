@@ -1,18 +1,30 @@
-html, body, div, * {
-    margin: 0; 
-    padding: 0; 
+html,
+body,
+div,
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    background-color: #eee;
+}
+
 a {
     text-decoration: none;
-    color: #333;
+    color: #873;
 }
 
 a:visited {
-    color: #333;
+    color: #645;
 }
 
 ul {
     list-style: none;
+}
+
+.github {
+    font-size: 40px;
 }
 
 #headbar {
@@ -24,16 +36,11 @@ ul {
     text-align: center;
 }
 
-#headbar * {
+#headbar *:not(br) {
     display: inline-block;
 }
 
-#headbar .padding {
-    width:15%;
-}
-
 #logo {
-    width: 400px;
     font-size: 28px;
     padding: 5px;
     font-weight: 700;
@@ -44,30 +51,116 @@ ul {
 }
 
 a > img {
+    -webkit-border-radius: 50%;
     border-radius: 50%;
+    -webkit-transition: linear 0.3s;
+    -o-transition: linear 0.3s;
     transition: linear 0.3s;
     width: 80px;
     height: 80px;
 }
 
 a:hover img {
-    transform:rotate(345deg);
+    -webkit-transform: rotate(345deg);
+    -ms-transform: rotate(345deg);
+    -o-transform: rotate(345deg);
+    transform: rotate(345deg);
 }
 
 #navbar {
     position: relative;
 }
 
-#navbar li {
-    margin-right: 30px;
-}
-
 #navbar li a {
     padding: 10px 20px;
-    border-radius: 5px;
-    transition:linear 0.3s;
+    -webkit-border-radius: 10px 20px;
+    border-radius: 10px 20px;
+    -webkit-transition: background-color linear 0.3s;
+    -o-transition: background-color linear 0.3s;
+    transition: background-color linear 0.3s;
 }
 
-#navbar li a:hover {
+#navbar li a:hover,
+li.currPlace a {
     background-color: #dde;
 }
+
+#main {
+    min-height: 200px;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    margin: 10 auto;
+}
+
+li.card {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    margin: 10px auto;
+    height: 120px;
+    width: 80%;
+    padding: 10px;
+}
+
+li.card > * {
+    display: inline-block;
+    height: 100%;
+}
+
+li.card .head * {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;
+    display: block;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+li.card .head img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+li.card .content {
+    vertical-align: top;
+    height: 100%;
+}
+
+#footer {
+    padding: 5px;
+    text-align: center;
+}
+
+#footer > div {
+    display: inline-block;
+    width: 45%;
+}
+
+#footer > div:first-child {
+    text-align: left;
+}
+
+#footer > div:last-child {
+    text-align: right;
+}
+
+@media all and (min-width: 630px) {
+
+    #headbar .padding {width: 15%;}
+    br.hide {display: none;}
+    #main {width: 80%;}
+}
+
+@media all and (max-width: 630px) {
+    #navbar li a {
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+
+    #headbar .padding {width: 0px;}
+    br.hide {display: inline-block;}
+    #main {width: 95%;}
+}
+
