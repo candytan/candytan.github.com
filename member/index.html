@@ -3,3 +3,17 @@ layout: page
 title: Member
 loc: m
 ---
+
+<ul>
+    {% for member in site.data.members %}
+    <li class="card">
+        <div class="head">
+            <img src="{{ site.pic }}/{{ member.name }}.jpg">
+            <span>{{ member.name }}</span>
+        </div>
+        <div class="content">
+            <span>{{ member.intro }}</span>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
