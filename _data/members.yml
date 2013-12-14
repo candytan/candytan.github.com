@@ -1,4 +1,9 @@
+#- name: default
+#  github: default
+#  site: ~
+#  intro: 預計規格 看要不要再加
+
 - name: NightFeather
   github: NightFeather
-  intro: Test
-
+  site: http://nightfeather.github.io
+  intro: Site Builder (literal)
