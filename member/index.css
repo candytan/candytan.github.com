@@ -1,0 +1,34 @@
+.card {
+    margin: 5px;
+    padding: 10px;
+    min-height: 150px;
+    background-color: rgba(224,224,224,0.3);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.card img {
+    height: 100px;
+    width: 100px;
+}
+
+.card > * {
+    display: inline-block;
+}
+
+.card .content {
+    vertical-align: top;
+    width: 700px;
+}
+
+.card .content p {
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 15px;
+}
+
+@media all and (max-width:870px) {
+    #main {width:100%;}
+    .card .content { width: 100%;}
+    .card .content p { width: 100%;}
+}

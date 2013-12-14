@@ -4,16 +4,14 @@ title: Member
 loc: m
 ---
 
-<ul>
     {% for member in site.data.members %}
-    <li class="card">
-        <div class="head">
+    <div class="card">
+        <a class="head" href="{{ member.site }}">
             <img src="{{ site.pic }}/{{ member.name }}.jpg">
-            <span>{{ member.name }}</span>
-        </div>
+        </a>
         <div class="content">
-            <span>{{ member.intro }}</span>
+            <h3>{{ member.name }}</h3>
+            <p>{{ member.intro }}</p>
         </div>
-    </li>
+    </div>
     {% endfor %}
-</ul>
