@@ -19,6 +19,11 @@ a:visited {
     color: #645;
 }
 
+a > img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
 ul {
     list-style: none;
 }
@@ -50,7 +55,7 @@ ul {
     vertical-align: middle;
 }
 
-a > img {
+#logo > a > img {
     -webkit-border-radius: 50%;
     border-radius: 50%;
     -webkit-transition: linear 0.3s;
@@ -60,7 +65,7 @@ a > img {
     height: 80px;
 }
 
-a:hover img {
+#logo > a:hover img {
     -webkit-transform: rotate(345deg);
     -ms-transform: rotate(345deg);
     -o-transform: rotate(345deg);
@@ -91,41 +96,7 @@ li.currPlace a {
     left: 0px;
     right: 0px;
     margin: 10 auto;
-}
-
-li.card {
-    position: relative;
-    left: 0px;
-    right: 0px;
-    margin: 10px auto;
-    height: 120px;
-    width: 80%;
-    padding: 10px;
-}
-
-li.card > * {
-    display: inline-block;
-    height: 100%;
-}
-
-li.card .head * {
-    position: relative;
-    left: 0px;
-    right: 0px;
-    margin: 0 auto;
-    display: block;
-    font-size: 18px;
-    font-weight: bolder;
-}
-
-li.card .head img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-}
-li.card .content {
-    vertical-align: top;
-    height: 100%;
+    padding: 10px 0px;
 }
 
 #footer {
@@ -146,11 +117,19 @@ li.card .content {
     text-align: right;
 }
 
+#footer > div:last-child * { vertical-align: middle; }
+
+#footer > div:last-child img {
+    height: 60px;
+    width: 60px;
+}
+
 @media all and (min-width: 630px) {
 
     #headbar .padding {width: 15%;}
+    br.show {display: inline-block;}
     br.hide {display: none;}
-    #main {width: 80%;}
+    #main {width: 870px;}
 }
 
 @media all and (max-width: 630px) {
@@ -161,6 +140,9 @@ li.card .content {
 
     #headbar .padding {width: 0px;}
     br.hide {display: inline-block;}
-    #main {width: 95%;}
+    br.show {display: none;}
+    #main {width: 100%;}
+    #footer > div {width: auto;}
+
 }
 
