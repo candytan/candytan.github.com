@@ -2,7 +2,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" type="text/css" href="{{ site.css }}/page.css">
-    <link rel="stylesheet" type="text/css" href="{{ page.url | remove:'.html' | append:'.css'}}">
+    {% for css in page.css %}
+        <link rel="stylesheet" type="text/css" href="{{site.css}}/{{css}}.css">
+    {% endfor %}
 </head>
 <body>
     <div id="headbar">

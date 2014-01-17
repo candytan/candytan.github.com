@@ -2,16 +2,18 @@
 layout: page
 title: Member
 loc: m
+css: [ cards ]
 ---
-
+<ul>
     {% for member in site.data.members %}
-    <div class="card">
+    <li class="card">
         <a class="head" href="{{ member.site }}">
-            <img src="{{ site.pic }}/{{ member.name }}.jpg">
+            <img src="{{ site.pic }}/{{ member.name }}.jpg" onerror="this.src ='{{ site.pic }}/404.jpg'">
         </a>
         <div class="content">
             <h3>{{ member.name }}</h3>
             <p>{{ member.intro }}</p>
         </div>
-    </div>
+    </li>
     {% endfor %}
+</ul>
