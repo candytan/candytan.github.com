@@ -18,11 +18,11 @@ a {
 a:visited {
     color: #645;
 }
-
+/*
 a > img {
     -webkit-border-radius: 50%;
     border-radius: 50%;
-}
+}*/
 
 ul {
     list-style: none;
@@ -36,7 +36,7 @@ ul {
     position: relative;
     font-size: 25px;
     font-weight: 900;
-    background-color: #ccd;
+    background-color: #dcc;
     padding: 10px;
     text-align: center;
 }
@@ -56,21 +56,21 @@ ul {
 }
 
 #logo > a > img {
-    -webkit-border-radius: 50%;
+    /*-webkit-border-radius: 50%;
     border-radius: 50%;
     -webkit-transition: linear 0.3s;
     -o-transition: linear 0.3s;
-    transition: linear 0.3s;
-    width: 80px;
-    height: 80px;
+    transition: linear 0.3s;*/
+    width: 300px;
+    height: 100px;
 }
-
+/*
 #logo > a:hover img {
     -webkit-transform: rotate(345deg);
     -ms-transform: rotate(345deg);
     -o-transform: rotate(345deg);
     transform: rotate(345deg);
-}
+}*/
 
 #navbar {
     position: relative;
