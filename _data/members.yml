@@ -3,17 +3,17 @@
 #  site: ~
 #  intro: 預計規格 看要不要再加 
 
-- name: 喜德
+- name: david11014
   github: david50407
   site: http://ncucc.davy.tw:8080/
   intro: DA DA <(_ _)>
 
-- name: 伊達
+- name: tjjh89017
   github: tjjh89017
   site: http://tatsujin.m.candytan.org:8080/
   intro: DA DA <(_ _)>
 
-- name: 喬巴
+- name: andy810625
   github: andy810625
   site: 
   intro: DA DA <_ _>
@@ -28,12 +28,12 @@
   site: http://yukikana.twbbs.org/wordpress
   intro: little mechanical engineering student
 
-- name: Tatsujin(達人)
+- name: Tatsujin
   github: c910335
   site: http://tatsujin.m.candytan.org:8080/
   intro: Litght Novel Author
   
-- name: 小趴
+- name: freetsubasa
   github: freetsubasa
   site: 
   intro: pet?
