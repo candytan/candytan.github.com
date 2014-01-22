@@ -39,6 +39,10 @@
     font-size: 15px;
 }
 
+.content {
+	margin-left: 10px;
+}
+
 @media all and (max-width:870px) {
     #main {width:100%;}
     .card .content { width: 100%;}
