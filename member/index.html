@@ -11,7 +11,7 @@ css: [ cards ]
             <img src="{{ site.pic }}/{{ member.name }}.jpg" onerror="this.src ='{{ site.pic }}/404.jpg'">
         </a>
         <div class="content">
-            <h3>{{ member.name }}</h3>
+            <h3><a href="{{ member.site }}">{{ member.name }}</a></h3> 
             <p>{{ member.intro }}</p>
 			<a href="https://github.com/{{ member.github }}">My Github</a>
         </div>
