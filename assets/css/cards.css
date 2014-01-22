@@ -11,8 +11,8 @@
     height: 100px;
     width: 100px;
     -webkit-border-radius: 50%;
-	transition: shadow 1.5s;
-	-webkit-transition: shadow 1.5s;
+	transition: box-shadow 1.5s;
+	-webkit-transition: box-shadow 1.5s;
     border-radius: 50%;
 }
 
