@@ -11,8 +11,8 @@
     height: 100px;
     width: 100px;
     
-	transition: box-shadow 0.3s, border-radius 3.5s;
-	-webkit-transition: box-shadow 0.3s, border-radius 3.5s;
+	transition: box-shadow 1s, border-radius 1s;
+	-webkit-transition: box-shadow 1s, border-radius 1s;
 	-webkit-border-radius: 50%;
     border-radius: 50%;
 }
@@ -20,8 +20,8 @@
 .card img:hover{
 	
 	box-shadow:3px 3px 6px 0px rgba(20%,20%,40%,0.5);
-	-webkit-border-radius: 10%;
-    border-radius: 10%;
+	-webkit-border-radius: 5%;
+    border-radius: 5%;
 }
 
 .card > * {
