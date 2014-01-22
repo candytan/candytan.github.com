@@ -1,16 +1,17 @@
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="{{ site.css }}/page.css">
+    <link rel="stylesheet" type="text/css" href="{{ site.css }}/page.css" />
     {% for css in page.css %}
-        <link rel="stylesheet" type="text/css" href="{{site.css}}/{{css}}.css">
+        <link rel="stylesheet" type="text/css" href="{{site.css}}/{{css}}.css" />
     {% endfor %}
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
 </head>
 <body>
     <div id="headbar">
         <div id="logo">
             <a href="/">
-                <img src="{{ site.pic }}/logo.png">
+                <img src="{{ site.pic }}/logo.png" />
             </a>
         </div>
         <div class="padding"></div>
