@@ -23,10 +23,6 @@ ul {
     list-style: none;
 }
 
-.github {
-    font-size: 40px;
-}
-
 #headbar {
     position: relative;
     font-size: 25px;
@@ -92,14 +88,8 @@ li.currPlace a {
     width: 45%;
 }
 
-#footer > div:first-child {
-    text-align: left;
-}
-
-#footer > div:last-child {
-    text-align: right;
-}
-
+#footer > div:first-child { text-align: left; }
+#footer > div:last-child { text-align: right; }
 #footer > div:last-child * { vertical-align: middle; }
 
 #footer > div:last-child img {

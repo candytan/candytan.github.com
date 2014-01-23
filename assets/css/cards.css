@@ -10,7 +10,6 @@
 .card img {
     height: 100px;
     width: 100px;
-    
 	transition: box-shadow 1s, border-radius 1s;
 	-webkit-transition: box-shadow 1s, border-radius 1s;
 	-webkit-border-radius: 50%;
